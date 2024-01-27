@@ -1,8 +1,8 @@
 import './main.css';
+import './mainPage.css';
 import Image from './image.png'
 
-function loadPage() {
-  const content = document.querySelector('#content');
+function loadMainPage() {
   const section = document.createElement('section');
   const wonderful = document.createElement('h1');
   const image = document.createElement('img');
@@ -10,14 +10,15 @@ function loadPage() {
   image.src = Image;
   image.classList.add('image');
   
-  wonderful.textContent = "WONDERFUL RESTAURANT";
+  wonderful.textContent = "Wonderful Restaurant";
   wonderful.classList.add('wonderful');
 
   section.classList.add('section');
-  section.appendChild(image);
   section.appendChild(wonderful);
+  section.appendChild(image);
 
-  content.appendChild(section);
+  
+  return section;
 }
 
-export default loadPage();
+export default loadMainPage;
