@@ -1,5 +1,6 @@
 import loadMainPage from './mainPage';
 import loadMenuPage from './menuPage';
+import laodAboutPage from './aboutPage';
 
 const home = document.querySelector('.home-button');
 const about = document.querySelector('.about-button');
@@ -17,9 +18,10 @@ home.addEventListener('click', () => {
 
 menu.addEventListener('click', () => {
   content.textContent = '';
-  content.appendChild(loadMenuPage())
+  content.appendChild(loadMenuPage());
 });
 
 about.addEventListener('click', () => {
   content.textContent = '';
+  content.appendChild(laodAboutPage());
 });

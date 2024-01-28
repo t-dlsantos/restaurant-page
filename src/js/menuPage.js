@@ -1,6 +1,6 @@
-import './main.css';
-import './menuPage.css';
-import Image from './image.png';
+import '../css/main.css';
+import '../css/menuPage.css';
+import Image from '../images/image.png';
 
 function loadMenuPage() {
   const section = document.createElement('section');
